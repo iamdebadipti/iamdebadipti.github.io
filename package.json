@@ -25,9 +25,11 @@
     "build": "yarn cache clean && gatsby clean && gatsby build",
     "develop": "gatsby develop",
     "start": "yarn run develop",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy:github": "yarn run clean && gatsby build && gh-pages -d public"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "prettier": "^2.0.5"
   }
 }
