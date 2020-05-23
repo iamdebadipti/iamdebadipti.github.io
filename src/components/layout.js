@@ -1,21 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import Navigation from './Navigation';
+import styles from '../styles/Layout.module.scss';
 
 const Layout = ({ title, children }) => {
   return (
-    <div>
-      <header>
-        <h1>
-          <Link to={`/`}>{title}</Link>
-        </h1>
-      </header>
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
-    </div>
+    <>
+      <Navigation />
+      <div className={styles.layout}>
+        <main>{children}</main>
+        <footer>© {new Date().getFullYear()}</footer>
+      </div>
+    </>
   );
 };
 

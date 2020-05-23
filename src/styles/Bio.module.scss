@@ -1,0 +1,83 @@
+.bio {
+  margin: 2rem auto 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+  &_pic {
+    margin: 0 auto 1rem;
+  }
+  &_detail {
+    text-align: center;
+  }
+  &_title {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    font-weight: 800;
+    margin: 0 0 0.4rem;
+    font-family: inherit;
+    &_wave {
+      display: inline-block;
+      margin-right: 0.8rem;
+      transform: rotate(0deg);
+      transform-origin: bottom right;
+      animation: waveAnim 5s ease-in-out infinite;
+    }
+  }
+  &_desc {
+    font-size: 1rem;
+    margin: 0;
+  }
+  &_social {
+    margin: 1.2rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8a8a8a;
+    &_link {
+      display: inline-flex;
+      color: #1f1f1f;
+      margin-left: 0.5rem;
+      &:hover {
+        color: #4d4d4d;
+      }
+      > svg {
+        margin: auto;
+      }
+    }
+  }
+  @media (min-width: 46rem) {
+    margin: 5rem auto 5rem;
+    flex-direction: row;
+    align-items: center;
+    &_pic {
+      margin: 0 0 0 1.6rem;
+    }
+    &_detail {
+      text-align: left;
+      flex: 1 0 0;
+    }
+    &_social {
+      justify-content: left;
+    }
+  }
+}
+
+@keyframes waveAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(15deg);
+  }
+  15% {
+    transform: rotate(-15deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  30% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

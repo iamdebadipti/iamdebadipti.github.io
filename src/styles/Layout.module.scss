@@ -1,0 +1,9 @@
+.layout {
+  max-width: 728px;
+  margin: 0 auto;
+  width: 85%;
+  padding: 0 1.6rem;
+  @media (min-width: 46rem) {
+    width: 65%;
+  }
+}

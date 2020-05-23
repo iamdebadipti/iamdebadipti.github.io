@@ -1,15 +1,11 @@
+const siteConfig = require('./config.js');
+
 module.exports = {
   siteMetadata: {
-    title: `👋 Welcome to my website`,
-    description: `My small portfolio website where you can find out what I am upto 🤪`,
-    siteUrl: `https://debadipti.me/`,
-    author: {
-      name: `Debadipti`,
-      summary: `who is an ugly programmer, creates beautiful websites.`
-    },
-    social: {
-      twitter: `iamdebadipti`
-    }
+    title: siteConfig.title,
+    description: siteConfig.description,
+    siteUrl: siteConfig.url,
+    author: siteConfig.author
   },
   plugins: [
     {
@@ -54,6 +50,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `content/assets/profile-pic.jpg`
       }
-    }
+    },
+    `gatsby-plugin-sass`
   ]
 };
