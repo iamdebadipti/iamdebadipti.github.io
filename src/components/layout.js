@@ -8,7 +8,6 @@ const Layout = ({ title, children }) => {
       <Navigation />
       <div className={styles.layout}>
         <main>{children}</main>
-        <footer>© {new Date().getFullYear()}</footer>
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 .bio {
-  margin: 2rem auto 3rem;
+  margin: 2rem auto 5rem;
   display: flex;
   flex-direction: column-reverse;
   &_pic {
@@ -15,11 +15,13 @@
     margin: 0 0 0.4rem;
     font-family: inherit;
     &_wave {
+      font-size: 1.7rem;
       display: inline-block;
       margin-right: 0.8rem;
       transform: rotate(0deg);
       transform-origin: bottom right;
       animation: waveAnim 5s ease-in-out infinite;
+      animation-delay: 2s;
     }
   }
   &_desc {

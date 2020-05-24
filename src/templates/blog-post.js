@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
-import Bio from '../components/Bio';
 import Layout from '../components/Layout';
+import styles from '../styles/Post.module.scss';
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
@@ -10,18 +10,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <article>
-        <header>
+      <article className={styles.post}>
+        <header className={styles.post_header}>
           <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <small>
+            Posted on {post.frontmatter.date} - {post.timeToRead} min read
+          </small>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <footer>
-          <Bio />
-        </footer>
+        <section className={styles.post_content} dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
 
-      <nav>
+      <nav className={styles.post_nav}>
         <ul>
           <li>
             {previous && (
@@ -56,6 +55,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

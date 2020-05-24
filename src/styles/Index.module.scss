@@ -1,0 +1,25 @@
+.index {
+  margin: 3rem 0 5rem;
+  &_heading {
+    font-weight: 800;
+    font-size: 1.77rem;
+    margin: 0 0 2.4rem;
+  }
+  &_article {
+    &:hover {
+      opacity: 0.8;
+    }
+    > article {
+      text-decoration: none;
+      color: #343434;
+      margin: 0 0 5rem;
+      > h2 {
+        font-size: 1.4rem;
+        margin: 0 0 0.4rem;
+      }
+      > small {
+        opacity: 0.6;
+      }
+    }
+  }
+}
