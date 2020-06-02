@@ -17,6 +17,7 @@ const Bio = () => {
       site {
         siteMetadata {
           title
+          description
           author {
             name
             bio
@@ -30,7 +31,7 @@ const Bio = () => {
     }
   `);
 
-  const { author, title } = data.site.siteMetadata;
+  const { author, description } = data.site.siteMetadata;
 
   return (
     <header className={styles.bio}>
@@ -39,7 +40,7 @@ const Bio = () => {
           <span className={styles.bio_title_wave} role="img" aria-label="Hand Wave Emoji">
             👋
           </span>
-          {title}
+          {description}
         </h3>
         <p className={styles.bio_desc}>{author.bio}</p>
         {/* {useIcon('twitter', '1.4rem')} */}

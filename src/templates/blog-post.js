@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import styles from '../styles/Post.module.scss';
+import SEO from '../components/Seo';
 
 const BlogPostTemplate = ({
   data,
@@ -14,6 +15,7 @@ const BlogPostTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
+      <SEO article title={post.frontmatter.title} description={post.frontmatter.description} />
       <article className={styles.post}>
         <header className={styles.post_header}>
           <h1>{post.frontmatter.title}</h1>

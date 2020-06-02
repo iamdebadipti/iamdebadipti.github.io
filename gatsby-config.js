@@ -51,6 +51,7 @@ module.exports = {
         icon: `content/assets/profile-pic.jpg`
       }
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`
   ]
 };
