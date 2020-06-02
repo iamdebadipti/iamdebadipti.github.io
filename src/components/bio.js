@@ -53,7 +53,7 @@ const Bio = () => {
               key={name}
               className={styles.bio_social_link}
             >
-              {getIcon(name, '1.14rem')}
+              {getIcon(name, '18')}
             </a>
           ))}
         </div>

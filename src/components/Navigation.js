@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 import styles from '../styles/Navigation.module.scss';
 
 const Navigation = () => {
@@ -8,7 +8,6 @@ const Navigation = () => {
       site {
         siteMetadata {
           title
-          siteUrl
           author {
             name
           }
@@ -17,13 +16,13 @@ const Navigation = () => {
     }
   `);
 
-  const { author, title, siteUrl } = data.site.siteMetadata;
+  const { author, title } = data.site.siteMetadata;
 
   return (
     <div className={styles.nav}>
-      <a href={siteUrl} title={title}>
+      <Link to="/" title={title}>
         <h1 className={styles.nav_title}>{author.name}</h1>
-      </a>
+      </Link>
     </div>
   );
 };

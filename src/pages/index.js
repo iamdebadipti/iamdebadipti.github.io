@@ -23,7 +23,7 @@ const BlogIndex = ({ data, location }) => {
               <article>
                 <h2>{title}</h2>
                 <small>
-                  on {node.frontmatter.date} - {node.timeToRead} min read
+                  Posted on {node.frontmatter.date} - {node.timeToRead} min read
                 </small>
                 <p
                   dangerouslySetInnerHTML={{

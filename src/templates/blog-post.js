@@ -1,26 +1,28 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import styles from '../styles/Post.module.scss';
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({
+  data,
+  // pageContext,
+  location
+}) => {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
-  const { previous, next } = pageContext;
+  // const { previous, next } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
       <article className={styles.post}>
         <header className={styles.post_header}>
           <h1>{post.frontmatter.title}</h1>
-          <small>
-            Posted on {post.frontmatter.date} - {post.timeToRead} min read
-          </small>
+          <time dateTime={post.frontmatter.date}>Posted on {post.frontmatter.date}</time>
         </header>
         <section className={styles.post_content} dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
 
-      <nav className={styles.post_nav}>
+      {/* <nav className={styles.post_nav}>
         <ul>
           <li>
             {previous && (
@@ -37,7 +39,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             )}
           </li>
         </ul>
-      </nav>
+      </nav> */}
     </Layout>
   );
 };
