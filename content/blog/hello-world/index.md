@@ -10,7 +10,7 @@ Welcome to my website 🤗. I know, I am writing this in a really crazy time, bu
 
 As you may already know, my name is Debadipti Patra, yup.. I know it's not the most memorable name you have ever heard, but really?? do you ever have to remember my name?🤔 Before jumping into my post, it is worth noting that I am very bad at writing. But I swear, I will write everything in plain and simple English 😬.
 
-I am a self-taught Software Engineer (Front-End Developer), from a very small village of [Odisha](https://en.wikipedia.org/wiki/Odisha), which is also known as the temple city of India. Currently I am working with some amazing and talented people in Bangalore. You know, being from a Management background, it is a little bit hard to get into Software Engineering, and I did not started programming also when I started my career. But, it is my passion for technologies, and some amazing peoples' help that got me this far, and I am forever grateful to them 😇.
+I am a self-taught Software Engineer (Front-End Developer), from a very small village of [Odisha](https://en.wikipedia.org/wiki/Odisha), which is also known as the temple state of India. Currently I am working with some amazing and talented people in Bangalore. You know, being from a Management background, it is a little bit hard to get into Software Engineering, and I did not started programming also when I started my career. But, it is my passion for technologies, and some amazing peoples' help that got me this far, and I am forever grateful to them 😇.
 
 ## 💪 My Work
 
