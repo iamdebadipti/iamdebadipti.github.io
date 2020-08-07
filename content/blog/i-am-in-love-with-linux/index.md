@@ -1,7 +1,7 @@
 ---
 title: 'I am in love with Linux 💛'
-date: '2020-08-07T21:10:03.284Z'
-description: 'MacOS is great, okay! Let's just accept the reality here. It is simple, elegant looking, have great touchpad, display, animations, software availability and all that good stuff.'
+date: '2020-08-07T22:31:03.284Z'
+description: 'MacOS is great, okay! Lets just accept the reality here. It is simple, elegant looking, have great touchpad, display, animations, software availability and all that good stuff.'
 ---
 
 MacOS is great, okay! Let's just accept the reality here. It is simple, elegant looking, have great touchpad, display, animations, software availability and all that good stuff. And, if you are looking for something to get your work done, then sure, go for it! or even Windows (except the fact that you don't care about your privacy 😜). But, the problem is everything about MacOS is so good, that it doesn't let its users change anything in it, ANYTHING! Of course you can change the wallpaper, what are you talking about!! 🤷‍♂️
