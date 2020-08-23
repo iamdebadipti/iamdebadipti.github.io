@@ -15,7 +15,7 @@ const BlogPostTemplate = ({
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO article title={post.frontmatter.title} description={post.frontmatter.description} />
+      <SEO article title={post.frontmatter.title} description={post.excerpt} />
       <article className={styles.post}>
         <header className={styles.post_header}>
           <h1>{post.frontmatter.title}</h1>
@@ -63,7 +63,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
       }
     }
   }

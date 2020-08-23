@@ -1,7 +1,6 @@
 ﻿---
 title: 'Hello World!'
 date: '2020-06-06T22:12:03.284Z'
-description: 'Welcome to my website 🤗. I know, I am writing this in a really crazy time, but this is my first ever blog about me that I have posted online so this is really exciting for me.'
 ---
 
 Welcome to my website 🤗. I know, I am writing this in a really crazy time, but this is my first ever blog about me that I have posted online so this is really exciting for me. While we are all stuck at home, it's a really good excuse to let you know, who am I? and what I do? and, why this website exist at all? If you want to follow me or see what I am up to, you can find me on [Twitter](https://twitter.com/iamdebadipti), [GitHub](https://github.com/iamdebadipti) and [LinkedIn](https://www.linkedin.com/in/p-debadipti/). I spend most of my time on Twitter, for the memes 🙌; so please follow me on there, I swear I will not bloat you timeline 😉.

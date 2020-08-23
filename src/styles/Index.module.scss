@@ -1,41 +1,38 @@
 .index {
-  margin: 3rem 0 5rem;
+  padding: 4.4rem 0 8.8rem;
   &_heading {
-    font-weight: 800;
-    font-size: 1.4rem;
-    margin: 0 0 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
   }
   &_article {
+    &_wrap {
+      margin: 3.8rem 0 0;
+    }
+    &:hover {
+      > article > h2 {
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+      }
+    }
     > article {
       text-decoration: none;
       color: #343434;
-      margin: 0 0 4rem;
+      margin: 2.5rem 0 0;
       > h2 {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         margin: 0 0 0.4rem;
       }
       > p {
-        font-size: 1rem;
+        font-size: 1.12rem;
       }
-      > small {
+      > span {
+        font-size: 0.88rem;
         opacity: 0.6;
       }
     }
   }
-  @media (min-width: 46rem) {
-    &_heading {
-      font-size: 1.77rem;
-      margin: 0 0 2.4rem;
-    }
-    &_article {
-      &:hover {
-        opacity: 0.8;
-      }
-      > article {
-        > h2 {
-          font-size: 1.4rem;
-        }
-      }
-    }
-  }
+  // @media (min-width: 46rem) {
+  //
+  // }
 }

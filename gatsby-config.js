@@ -5,7 +5,9 @@ module.exports = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteUrl: siteConfig.url,
-    author: siteConfig.author
+    author: siteConfig.author,
+    navLinks: siteConfig.navLinks,
+    skills: siteConfig.skills
   },
   plugins: [
     {
