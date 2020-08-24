@@ -1,14 +1,14 @@
 module.exports = {
   url: `https://debadipti.me`,
   title: `Debadipti Patra`,
-  description: `Welcome to my website`,
   author: {
     name: `Debadipti Patra`,
     bio: `Nobis qui voluptas minima nihil. Animi in quod eum soluta deleniti. Quidem consequatur et nulla. Excepturi optio quod consequatur dolores numquam modi tempore. Soluta eligendi fugiat id sed voluptatem explicabo nulla.`,
     contact: {
       EMAIL: { name: `hey@debadipti.me`, link: `mailto:hey@debadipti.me` },
       TWITTER: { name: `iamdebadipti`, link: `https://twitter.com/iamdebadipti` },
-      GITHUB: { name: `iamdebadipti`, link: `https://github.com/iamdebadipti` }
+      GITHUB: { name: `iamdebadipti`, link: `https://github.com/iamdebadipti` },
+      LINKEDIN: { name: `iamdebadipti`, link: `https://www.linkedin.com/in/iamdebadipti/` }
     }
   },
   navLinks: [
