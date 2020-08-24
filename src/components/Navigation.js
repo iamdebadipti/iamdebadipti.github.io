@@ -58,7 +58,7 @@ const Navigation = ({ location }) => {
       </div>
       <div className={styles.nav_tools}>
         <a href={TWITTER.link} target="_blank" rel="noreferrer">
-          {getIcon('TWITTER', '1.4rem')}
+          {getIcon('TWITTER', '1.4rem', value ? '#F1F1F1' : '#343434')}
         </a>
         <button className={styles.nav_tools} aria-label="dark mode switch" onClick={() => toggle()}>
           <span>Toggle Dark Mode</span>

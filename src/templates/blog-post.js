@@ -10,11 +10,10 @@ const BlogPostTemplate = ({
   location
 }) => {
   const post = data.markdownRemark;
-  const siteTitle = data.site.siteMetadata.title;
   // const { previous, next } = pageContext;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO article title={post.frontmatter.title} description={post.excerpt} />
       <article className={styles.post}>
         <header className={styles.post_header}>
@@ -50,11 +49,6 @@ export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)

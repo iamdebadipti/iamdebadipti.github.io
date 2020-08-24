@@ -1,0 +1,28 @@
+.contact {
+  padding: 5rem 0;
+  &_flex,
+  &_links {
+    display: flex;
+  }
+  &_flex {
+    > div {
+      p {
+        font-size: 1.12rem;
+      }
+      &:first-child {
+        padding-right: 5rem;
+      }
+    }
+  }
+  &_links {
+    margin: 2rem 0 0;
+    &_item {
+      margin: 0 1.4rem 0 0;
+    }
+  }
+  &_heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+}
