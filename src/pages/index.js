@@ -9,12 +9,12 @@ import SEO from '../components/Seo';
 import Skills from '../components/Skills';
 
 const BlogIndex = ({ data, location }) => {
-  const { siteTitle, description } = data.site.siteMetadata;
+  const { siteTitle, author } = data.site.siteMetadata;
   const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO article title={'Hello World'} description={description} />
+      <SEO article title={'👋 Hey There'} description={author.bio} />
       <Bio />
       <Skills />
       <div className={styles.index}>
@@ -57,7 +57,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        description
+        author {
+          bio
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {

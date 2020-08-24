@@ -1,9 +1,13 @@
 import React from 'react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
+import useDarkMode from 'use-dark-mode';
+
 import styles from '../styles/Navigation.module.scss';
 import getIcon from '../utils/get-icon';
 
 const Navigation = ({ location }) => {
+  const { value, toggle } = useDarkMode(false);
+
   const data = useStaticQuery(graphql`
     query AuthorQuery {
       site {
@@ -56,7 +60,10 @@ const Navigation = ({ location }) => {
         <a href={TWITTER.link} target="_blank" rel="noreferrer">
           {getIcon('TWITTER', '1.4rem')}
         </a>
-        <span aria-label="dark mode switch">{getIcon('MOON', '1.4rem')}</span>
+        <button className={styles.nav_tools} aria-label="dark mode switch" onClick={() => toggle()}>
+          <span>Toggle Dark Mode</span>
+          {getIcon(value ? 'SUN' : 'MOON', '1.4rem')}
+        </button>
       </div>
     </div>
   );

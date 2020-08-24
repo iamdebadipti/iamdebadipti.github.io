@@ -5,19 +5,19 @@ import { useStaticQuery, graphql } from 'gatsby';
 const SEO = ({ title, description, article }) => {
   const { site } = useStaticQuery(query);
 
-  const { defaultTitle, defaultDescription } = site.siteMetadata;
+  const { defaultTitle } = site.siteMetadata;
 
   const seo = {
     title: title || defaultTitle,
-    description: description || defaultDescription
+    description: description || ''
   };
 
   return (
-    <Helmet title={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
+    <Helmet title={seo.title} titleTemplate={`%s - ${defaultTitle}`}>
       <meta name="description" content={seo.description} />
       {seo.url && <meta property="og:url" content={seo.url} />}
       {(article ? true : null) && <meta property="og:type" content="article" />}
-      {seo.title && <meta property="og:title" content={seo.title} />}
+      {seo.title && <meta property="og:title" content={`${seo.title} - ${defaultTitle}`} />}
       {seo.description && <meta property="og:description" content={seo.description} />}
     </Helmet>
   );
@@ -30,7 +30,6 @@ const query = graphql`
     site {
       siteMetadata {
         defaultTitle: title
-        defaultDescription: description
         siteUrl: siteUrl
       }
     }

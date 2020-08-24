@@ -30,11 +30,24 @@
       cursor: pointer;
     }
     > a,
-    > span {
+    > button {
+      display: inline-flex;
+      align-items: center;
       margin-left: 0.88rem;
       // > svg {
       //   color: #565656;
       // }
+    }
+    > button {
+      cursor: pointer;
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      outline: none;
+      color: inherit;
+      > span {
+        display: none;
+      }
     }
   }
 }
