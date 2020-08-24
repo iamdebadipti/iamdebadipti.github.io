@@ -6,16 +6,13 @@
   }
   &_flex {
     > div {
-      p {
-        font-size: 1.12rem;
-      }
       &:first-child {
         padding-right: 5rem;
       }
     }
   }
   &_links {
-    margin: 2rem 0 0;
+    margin: 4rem 0 0;
     &_item {
       margin: 0 1.4rem 0 0;
     }

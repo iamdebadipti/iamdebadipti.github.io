@@ -6,7 +6,8 @@ module.exports = {
     siteUrl: siteConfig.url,
     author: siteConfig.author,
     navLinks: siteConfig.navLinks,
-    skills: siteConfig.skills
+    skills: siteConfig.skills,
+    projects: siteConfig.projects
   },
   plugins: [
     {

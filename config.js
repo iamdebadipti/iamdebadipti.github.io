@@ -47,5 +47,31 @@ module.exports = {
     { name: `NETLIFY`, label: `Netlify` }
     // { name: `ADOBEXD`, label: `Adobe XD` },
     // { name: `FIGMA`, label: `Figma` }
+  ],
+  projects: [
+    {
+      id: `useDarkHook`,
+      title: `use-dark-hook`,
+      description: `A light-weight and straight forward library that adds 'dark mode' in your web app using React Hook.`,
+      github_link: `https://github.com/iamdebadipti/use-dark-hook`,
+      project_link: `https://www.npmjs.com/package/use-dark-hook`,
+      tools: [`React`, `Babel`, `Webpack`, `Parcel`, `Git`]
+    },
+    {
+      id: `noted`,
+      title: `Noted`,
+      description: `A minimal, simple and elegant note taking app built with React Native for Android and another web application built with React.`,
+      github_link: `https://github.com/iamdebadipti/noted`,
+      project_link: ``,
+      tools: [`React Native`, `Firebase`, `Git`]
+    },
+    {
+      id: `fossbracket`,
+      title: `Fossbracket`,
+      description: `A blog website all about OSS - Linux, Gadgets & Softwares and Web Technologies - JavaScript, React, CSS, Node, GraphQL and so much more.`,
+      github_link: `https://github.com/iamdebadipti/fossbracket`,
+      project_link: `https://www.fossbracket.com/`,
+      tools: [`Gatsby`, `React`, `Node.JS`, `Git`]
+    }
   ]
 };
