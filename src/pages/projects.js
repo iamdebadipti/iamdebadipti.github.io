@@ -25,23 +25,23 @@ const ProjectsPage = ({ location }) => {
           }
         }
       }
-      useDarkHook: file(absolutePath: { regex: "/dummy-project.jpg/" }) {
+      useDarkHook: file(absolutePath: { regex: "/use-dark-hook.jpg/" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      noted: file(absolutePath: { regex: "/dummy-project-2.jpg/" }) {
+      noted: file(absolutePath: { regex: "/noted.jpeg/" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      fossbracket: file(absolutePath: { regex: "/dummy-project-2.jpg/" }) {
+      fossbracket: file(absolutePath: { regex: "/fossbracket.jpg/" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 720) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -53,7 +53,7 @@ const ProjectsPage = ({ location }) => {
 
   return (
     <Layout location={location}>
-      <SEO title={'Projects'} />
+      <SEO title={'My Projects'} />
       <div className={styles.projects}>
         <div className={styles.projects_heading}>
           <h1>My Projects</h1>
@@ -65,11 +65,7 @@ const ProjectsPage = ({ location }) => {
         <div className={styles.projects_flex}>
           {projects.map((project) => (
             <div className={styles.projects_single}>
-              <Image
-                fluid={data[project.id].childImageSharp.fluid}
-                alt={''}
-                className="project_img"
-              />
+              <Image fluid={data[project.id].childImageSharp.fluid} alt={project.title} />
               <div className={styles.projects_single_heading}>
                 <h2>
                   {project.title}{' '}
