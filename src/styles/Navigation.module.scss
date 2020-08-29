@@ -1,18 +1,24 @@
 .nav {
-  height: 5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   // border-bottom: 1px solid #000;
+  @media (min-width: 46rem) {
+    height: 5rem;
+  }
   &_links {
     display: inline-flex;
     align-items: center;
     &_item {
-      font-size: 0.88rem;
+      font-size: 0.8rem;
       text-transform: uppercase;
       display: inline-flex;
       align-items: center;
-      margin-right: 2.2rem;
+      margin-right: 1.2rem;
+      &:last-child {
+        display: none;
+      }
       > span {
         margin: 0 0 0.15rem 0.3rem;
         display: inline-flex;
@@ -20,6 +26,13 @@
       &:hover,
       &:focus {
         text-decoration: underline;
+      }
+      @media (min-width: 46rem) {
+        font-size: 0.88rem;
+        margin-right: 2.2rem;
+        &:last-child {
+          display: inline-flex;
+        }
       }
     }
   }

@@ -1,13 +1,13 @@
 .bio {
-  padding: 5rem 0 4.4rem;
+  padding: 3rem 0 2rem;
   &_hello {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 0 0 0.8rem;
     line-height: 1;
     &_wave {
-      font-size: 2rem;
+      font-size: 1.3rem;
       display: inline-block;
       margin-right: 0.8rem;
       transform: rotate(0deg);
@@ -17,10 +17,10 @@
     }
   }
   &_title {
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 500;
     line-height: 1;
-    margin: 0 0 1.8rem;
+    margin: 0 0 1.2rem;
   }
   &_desc {
     // font-size: 1.12rem;
@@ -41,8 +41,19 @@
       }
     }
   }
-  // @media (min-width: 46rem) {
-  // }
+  @media (min-width: 46rem) {
+    padding: 5rem 0 4.4rem;
+    &_hello {
+      font-size: 1.5rem;
+      &_wave {
+        font-size: 2rem;
+      }
+    }
+    &_title {
+      font-size: 3rem;
+      margin: 0 0 1.8rem;
+    }
+  }
 }
 
 @keyframes waveAnim {

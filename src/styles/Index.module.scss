@@ -1,13 +1,13 @@
 .index {
-  padding: 4.4rem 0 8.8rem;
+  padding: 1.5rem 0 6rem;
   &_heading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: 0;
   }
   &_article {
     &_wrap {
-      margin: 3.8rem 0 0;
+      margin: 1.8rem 0 0;
     }
     &:hover {
       > article > h2 {
@@ -17,9 +17,9 @@
     }
     > article {
       text-decoration: none;
-      margin: 2.5rem 0 0;
+      margin: 1.8rem 0 0;
       > h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin: 0 0 0.4rem;
       }
       // > p {
@@ -31,7 +31,21 @@
       }
     }
   }
-  // @media (min-width: 46rem) {
-  //
-  // }
+  @media (min-width: 46rem) {
+    padding: 4.4rem 0 8.8rem;
+    &_heading {
+      font-size: 1.5rem;
+    }
+    &_article {
+      &_wrap {
+        margin: 3.8rem 0 0;
+      }
+      > article {
+        margin: 2.5rem 0 0;
+        > h2 {
+          font-size: 1.6rem;
+        }
+      }
+    }
+  }
 }
