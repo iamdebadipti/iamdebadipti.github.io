@@ -3,7 +3,7 @@ module.exports = {
   title: `Debadipti Patra`,
   author: {
     name: `Debadipti Patra`,
-    bio: `Nobis qui voluptas minima nihil. Animi in quod eum soluta deleniti. Quidem consequatur et nulla. Excepturi optio quod consequatur dolores numquam modi tempore. Soluta eligendi fugiat id sed voluptatem explicabo nulla.`,
+    bio: `I am an experienced front-end engineer based in Bangalore, now passionately learning both front and back of the web. My favorite technologies are React.js, SCSS, Gatsby, TypeScript, Node.js, GraphQL and Next.js. I am more focused on creating useful software, using the technologies I know, that will help people.`,
     contact: {
       EMAIL: { name: `hey@debadipti.me`, link: `mailto:hey@debadipti.me` },
       TWITTER: { name: `iamdebadipti`, link: `https://twitter.com/iamdebadipti` },

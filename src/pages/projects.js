@@ -58,8 +58,8 @@ const ProjectsPage = ({ location }) => {
         <div className={styles.projects_heading}>
           <h1>My Projects</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente officiis laboriosam
-            blanditiis adipisci non molestiae id odit dicta eaque expedita!
+            Here are some of my projects I have done to help people excluding my professional career
+            projects.
           </p>
         </div>
         <div className={styles.projects_flex}>

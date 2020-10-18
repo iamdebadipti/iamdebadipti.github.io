@@ -6,7 +6,7 @@ import Bio from '../components/Bio';
 import Layout from '../components/Layout';
 import styles from '../styles/Index.module.scss';
 import SEO from '../components/Seo';
-import Skills from '../components/Skills';
+// import Skills from '../components/Skills';
 
 const BlogIndex = ({ data, location }) => {
   const { author } = data.site.siteMetadata;
@@ -16,7 +16,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location}>
       <SEO article title={'👋 Hey There'} description={author.bio} />
       <Bio />
-      <Skills />
+      {/* <Skills /> */}
       <div className={styles.index}>
         <h3 className={styles.index_heading}>
           My Posts{' '}

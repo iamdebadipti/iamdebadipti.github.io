@@ -58,8 +58,11 @@ const ContactPage = ({ location }) => {
           <div>
             <h1 className={styles.contact_heading}>Contact Me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ipsum unde esse, dolore
-              rem dignissimos repellat nostrum molestiae iste laudantium?
+              Feel free to contact me if anything! I will be glad to have a discussion on anything
+              tech{' '}
+              <span role="img" aria-label="yoo emoji">
+                ✌️
+              </span>
             </p>
             <div className={styles.contact_links}>
               {Object.keys(contact).map((name) => (
