@@ -1,30 +1,29 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { Link } from 'gatsby';
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 
-const NotFoundPage = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title;
-
+const NotFoundPage = ({ location }) => {
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <SEO title={'404 - Page Not Found'} />
-      <h1>Ooops!</h1>
+      <h1>
+        Ooops! You've lost in space{' '}
+        <span role="img" aria-label="rocket emoji">
+          🚀
+        </span>
+      </h1>
       <p>
-        You are lost in space! Go back to <Link to="/">Earth</Link>
+        Don't worry we've got your back!{' '}
+        <Link to="/" style={{ textDecoration: 'underline' }}>
+          Go back to Earth{' '}
+          <span role="img" aria-label="earth emoji">
+            🌍
+          </span>
+        </Link>
       </p>
     </Layout>
   );
 };
 
 export default NotFoundPage;
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;

@@ -3,9 +3,11 @@ const siteConfig = require('./config.js');
 module.exports = {
   siteMetadata: {
     title: siteConfig.title,
-    description: siteConfig.description,
     siteUrl: siteConfig.url,
-    author: siteConfig.author
+    author: siteConfig.author,
+    navLinks: siteConfig.navLinks,
+    skills: siteConfig.skills,
+    projects: siteConfig.projects
   },
   plugins: [
     {
@@ -52,6 +54,9 @@ module.exports = {
       }
     },
     `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: 'gatsby-plugin-use-dark-mode'
+    }
   ]
 };

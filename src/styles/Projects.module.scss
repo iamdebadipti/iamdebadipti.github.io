@@ -1,0 +1,85 @@
+.projects {
+  padding: 3rem 0 2rem;
+  &_heading {
+    > h1 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+  &_flex {
+    padding: 2rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &_single {
+    flex: calc(50% - 1rem) 0 0px;
+    margin: 0 0 2.6rem;
+    // background-color: khaki;
+    // > .project_img {
+    //   width: 100%;
+    //   display: block;
+    // }
+    &_heading {
+      margin: 0.6rem 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      > h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin: 0;
+      }
+      > a {
+        opacity: 0.6;
+        display: inline-flex;
+        align-items: center;
+        font-size: 0.88rem;
+        > svg {
+          margin-right: 0.2rem;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+    &_skills {
+      margin: 0.4rem 0 0;
+      font-size: 0.8rem;
+      > span {
+        opacity: 0.6;
+      }
+      > strong {
+        opacity: 0.8;
+      }
+    }
+    > p {
+      font-size: 1rem;
+      margin: 1.2rem 0 0;
+    }
+  }
+  @media (min-width: 46rem) {
+    padding: 5rem 0;
+    &_heading {
+      > h1 {
+        font-size: 1.5rem;
+      }
+    }
+    &_flex {
+      flex-direction: row;
+      padding: 4rem 0 0;
+    }
+    &_single {
+      flex: calc(50% - 1rem) 0 0px;
+      margin: 0 0 4.4rem;
+      &_heading {
+        margin: 0.88rem 0 0;
+        > h2 {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

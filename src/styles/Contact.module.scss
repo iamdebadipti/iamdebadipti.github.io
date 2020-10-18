@@ -1,0 +1,45 @@
+.contact {
+  padding: 3rem 0 2.2rem;
+  &_flex,
+  &_links {
+    display: flex;
+  }
+  &_flex {
+    flex-direction: column-reverse;
+    > div {
+      margin: 0 0 1.2rem;
+    }
+  }
+  &_links {
+    margin: 2.2rem 0;
+    &_item {
+      margin: 0 1.4rem 0 0;
+    }
+  }
+  &_heading {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  @media (min-width: 46rem) {
+    padding: 5rem 0;
+    &_heading {
+      font-size: 1.5rem;
+    }
+    &_flex,
+    &_links {
+      flex-direction: row;
+    }
+    &_flex {
+      > div {
+        margin: 0;
+        &:first-child {
+          padding-right: 5rem;
+        }
+      }
+    }
+    &_links {
+      margin: 4rem 0 0;
+    }
+  }
+}
