@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Image from 'gatsby-image';
-import useDarkMode from 'use-dark-mode';
+// import useDarkMode from 'use-dark-mode';
 
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
@@ -9,7 +9,7 @@ import styles from '../styles/Projects.module.scss';
 import getIcon from '../utils/get-icon';
 
 const ProjectsPage = ({ location }) => {
-  const { value } = useDarkMode(false);
+  // const { value } = useDarkMode(false);
 
   const data = useStaticQuery(graphql`
     query ProjectsQuery {
@@ -81,7 +81,7 @@ const ProjectsPage = ({ location }) => {
                   )}
                 </h2>
                 <a href={project.github_link} target="_blank" rel="noreferrer">
-                  {getIcon('GITHUB', '14', value ? '#F1F1F1' : '#000000')} GitHub
+                  {getIcon('GITHUB', '14', '#000000')} GitHub
                 </a>
               </div>
               <div className={styles.projects_single_skills}>

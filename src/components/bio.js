@@ -3,10 +3,10 @@ import { useStaticQuery, graphql } from 'gatsby';
 // import Image from 'gatsby-image';
 import styles from '../styles/Bio.module.scss';
 import { getIcon } from '../utils';
-import useDarkMode from 'use-dark-mode';
+// import useDarkMode from 'use-dark-mode';
 
 const Bio = () => {
-  const { value } = useDarkMode(false);
+  // const { value } = useDarkMode(false);
 
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -57,7 +57,7 @@ const Bio = () => {
           {EMAIL.name}
         </a>
         <a href={GITHUB.link} target="_blank" rel="noreferrer" className={styles.bio_social_link}>
-          {getIcon('GITHUB', '18', value ? '#F1F1F1' : '#343434')}
+          {getIcon('GITHUB', '18')}
           GitHub
         </a>
       </div>
