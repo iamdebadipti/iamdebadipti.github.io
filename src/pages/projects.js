@@ -9,7 +9,7 @@ import styles from '../styles/Projects.module.scss';
 import getIcon from '../utils/get-icon';
 
 const ProjectsPage = ({ location }) => {
-  const { value } = useDarkMode();
+  const { value } = useDarkMode(false);
 
   const data = useStaticQuery(graphql`
     query ProjectsQuery {
@@ -63,8 +63,8 @@ const ProjectsPage = ({ location }) => {
           </p>
         </div>
         <div className={styles.projects_flex}>
-          {projects.map((project) => (
-            <div className={styles.projects_single}>
+          {projects.map((project, index) => (
+            <div className={styles.projects_single} key={index}>
               <Image fluid={data[project.id].childImageSharp.fluid} alt={project.title} />
               <div className={styles.projects_single_heading}>
                 <h2>
@@ -76,12 +76,12 @@ const ProjectsPage = ({ location }) => {
                       rel="noreferrer"
                       title="View Project"
                     >
-                      {getIcon('EXTERNAL_LINK', '1.2rem')}
+                      {getIcon('EXTERNAL_LINK', '18')}
                     </a>
                   )}
                 </h2>
                 <a href={project.github_link} target="_blank" rel="noreferrer">
-                  {getIcon('GITHUB', '0.88rem', value ? '#F1F1F1' : '#000000')} GitHub
+                  {getIcon('GITHUB', '14', value ? '#F1F1F1' : '#000000')} GitHub
                 </a>
               </div>
               <div className={styles.projects_single_skills}>

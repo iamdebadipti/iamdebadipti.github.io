@@ -13,7 +13,7 @@ module.exports = {
   },
   navLinks: [
     {
-      label: `Start`,
+      label: `Home`,
       path: `/`
     },
     {

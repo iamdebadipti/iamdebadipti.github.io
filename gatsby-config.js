@@ -50,7 +50,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `content/assets/profile-pic.jpg`
+        icon: `content/assets/profile-pic.jpeg`
       }
     },
     `gatsby-plugin-sass`,

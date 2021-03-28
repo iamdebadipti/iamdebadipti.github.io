@@ -10,9 +10,9 @@ import getIcon from '../utils/get-icon';
 const ContactPage = ({ location }) => {
   const data = useStaticQuery(graphql`
     query ContactQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpeg/" }) {
         childImageSharp {
-          fixed(width: 180, height: 180) {
+          fixed(width: 240, height: 320) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -71,8 +71,9 @@ const ContactPage = ({ location }) => {
                   rel="noreferrer"
                   href={contact[name].link}
                   className={styles.contact_links_item}
+                  key={name}
                 >
-                  {getIcon(name, '2.4rem')}
+                  {getIcon(name, '38')}
                 </a>
               ))}
             </div>
@@ -81,7 +82,7 @@ const ContactPage = ({ location }) => {
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author.name}
-              style={{ border: '1px solid #e0e0e0' }}
+              // style={{ border: '1px solid #e0e0e0' }}
             />
           </div>
         </div>

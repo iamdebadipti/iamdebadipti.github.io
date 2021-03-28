@@ -31,7 +31,7 @@ const Navigation = () => {
       <div className={styles.skills_flex}>
         {skills.map((item, index) => (
           <div className={styles.skills_item} key={item.name + index}>
-            {getIcon(item.name, '3rem')}
+            {getIcon(item.name, '48')}
             <span>{item.label}</span>
           </div>
         ))}
